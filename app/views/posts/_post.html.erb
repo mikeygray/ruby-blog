@@ -1,17 +1,10 @@
 <div id="<%= dom_id post %>">
+  <h3><%= post.title %></h3>
+  <h4><%= post.tagline %></h4> 
+  <i>
+    Posted <%= time_tag post.created_at, "data-local": "time-ago" %> | <%= pluralize post.comments.count, "comment" %>
+  </i>
   <p>
-    <strong>Title:</strong>
-    <%= post.title %>
-  </p>
-
-  <p>
-    <strong>Tagline:</strong>
-    <%= post.tagline %>
-  </p>
-
-  <p>
-    <strong>Content:</strong>
     <%= post.content %>
   </p>
-
 </div>
