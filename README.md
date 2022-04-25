@@ -8,7 +8,7 @@ Install Ruby, SQLite3, Node, Yarn and Rails as outlined [here](https://guides.ru
 
 ```sh
 git clone https://github.com/mikeygray/ruby-blog.git
-cd blog
+cd ruby-blog
 rails db:migrate
 bundle
 rails server

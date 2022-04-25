@@ -1,8 +1,12 @@
-<h3>Commenting</h3>
+<h3>Submitted Comments</h3>
 
 <div id="comments">
-  <%# Expands to render partial: "comments/comment", collection: post.comments %>
-  <%= render post.comments %>
+  <ul>
+    <% @post.comments.each do |comment| %>
+      <li><%= render comment %></li>
+    <% end %>
+  </ul>
 </div>
+
 
 <%= render "comments/new", post: post %>
