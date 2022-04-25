@@ -5,9 +5,9 @@
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render post %>
-    <%= link_to "View this post ➡️", post %>
+    <%= button_to "View this post ➡️", post, method: :get %>
     <hr />
   <% end %>
 </div>
 
-<%= link_to  "New post ✍️", new_post_path %>
+<%= button_to  "New post ✍️", new_post_path, method: :get %>

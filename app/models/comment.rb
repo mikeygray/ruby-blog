@@ -1,5 +1,8 @@
 class Comment < ApplicationRecord
-  belongs_to :post
+  # Validation
+  # validates_presence_of :name
   validates_presence_of :content
+
+  belongs_to :post
   broadcasts_to :post
 end

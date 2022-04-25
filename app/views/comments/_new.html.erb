@@ -1,5 +1,6 @@
 <%= form_with model: [ post, Comment.new ] do |form| %>
   <h3>Add your comment:</h3>
-  <%= form.text_area :content, size: "20x5" %>
+  <%= form.text_field :name, size: 20, placeholder: 'My name' %>
+  <%= form.text_area :content, size: "20x5", placeholder: 'My comment' %>
   <%= form.submit %>
 <% end %>

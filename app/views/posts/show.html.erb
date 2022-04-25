@@ -5,8 +5,8 @@
 <%= render @post %>
 
 <div style="display: flex; justify-content: space-evenly">
-  <%= link_to "⬅️ Posts", posts_path %>
-  <%= link_to "📖 Edit", edit_post_path(@post) %>
+  <%= button_to "⬅️ Posts", posts_path, method: :get %>
+  <%= button_to "📖 Edit", edit_post_path(@post), method: :get %>
   <%= button_to "❌ Delete", @post, method: :delete %>
 </div>
 
